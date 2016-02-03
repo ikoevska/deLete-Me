@@ -1,0 +1,45 @@
+{
+  "ProjectName": "clone-extensibility-with-gens",
+  "ProjectGuid": "d74706e2-11be-4aa9-92a5-de2ee6487cdd",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.cloneextensibilitywithgens",
+  "DisplayName": "clone-extensibility-with-gens",
+  "Author": "",
+  "Description": "clone-extensibility-with-gens",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{a4d01f96-2157-4177-980e-f33d0cd4fb2d}",
+  "WP8ProductID": "{ca9f1683-b986-4a29-9b84-bd853db6b082}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.cloneextensibilitywithgens",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
