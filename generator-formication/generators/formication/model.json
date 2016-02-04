@@ -1,0 +1,40 @@
+{
+    "name": "formViewblewModel",
+    "submitButton": "Confirmationing",
+    "cancelButton": "Cancelllationing",
+    "components": [
+        {
+            "name": "username",
+            "title": "Username",
+            "inputType": "text",
+            "type": "kendo-ui-mobile:field",
+            "isNew": true
+        },
+        {
+            "name": "search",
+            "title": "Search",
+            "inputType": "search",
+            "placeholder": "Search",
+            "type": "kendo-ui-mobile:field",
+            "isNew": true
+        },
+        {
+            "name": "checkbox",
+            "title": "Label",
+            "inputType": "checkbox",
+            "type": "kendo-ui-mobile:field",
+            "isNew": true
+        },
+        {
+            "name": "paragraph",
+            "title": "Paragraph",
+            "inputType": "paragraph",
+            "value": "sssssssssss",
+            "type": "kendo-ui-mobile:field",
+            "isNew": true
+        }
+    ],
+    "type": "formication:formication",
+    "title": "Form blew",
+    "isNew": true
+}

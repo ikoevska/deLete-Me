@@ -1,0 +1,19 @@
+{
+    "name": "aboutViewCustomModel",
+    "appName": "My Awesome App",
+    "appVersion": "Version 1.5",
+    "appIcon": "x0x8i.jpg",
+    "appDescription": "App descriptioningingingigngigigngng",
+    "contactButton": true,
+    "contactLabel": "Look us up",
+    "contactMail": "here@support.com",
+    "facebookButton": true,
+    "facebookLabel": "Find us on Facebook",
+    "facebookLink": "https://www.facebook.com/hamsters",
+    "twitterButton": true,
+    "twitterLabel": "Stalk us on Twitter",
+    "twitterLink": "https://twitter.com/hipsters",
+    "type": "about:about",
+    "title": "About Custom",
+    "isNew": true
+}

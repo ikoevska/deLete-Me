@@ -1,0 +1,20 @@
+<div data-role="view" data-title="cheeseNachos" data-layout="main" data-model="app.nachos" data-show="app.nachos.onShow" data-after-show="app.nachos.afterShow">
+
+    <!-- START_CUSTOM_CODE_nachos -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_nachos -->
+    <!--  Certain features like grouping and inset styling are not supported when endless scroll is enabled. -->
+    <ul data-role="listview" data-style="" data-template="nachosModelTemplate" data-bind="{ source: nachosModel.dataSource, events: {click: nachosModel.itemClick}}" data-pull-to-refresh="true" data-endless-scroll="true" data-filterable="{field: 'Comment', operator: 'contains'}">
+    </ul>
+    <!-- START_CUSTOM_CODE_nachosModel -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_nachosModel -->
+    <script type="text/x-kendo-template" id="nachosModelTemplate">
+        <div class="image-with-text">
+            <h3><span class="#: data.icon() #"></span>#: data['UserId'] #</h3>
+            <p>#: data['ActivityId'] #</p>
+        </div>
+    </script>
+</div>

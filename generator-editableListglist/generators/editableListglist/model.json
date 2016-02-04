@@ -1,0 +1,72 @@
+{
+    "name": "editableListView1Model",
+    "dataProvider": "cloneExtensibilityWithGens",
+    "collection": "Activities",
+    "headerField": "Text",
+    "listExtraFields": [],
+    "detailHeaderField": "Likes",
+    "detailSubHeaderField": "Likes",
+    "detailDescriptionField": "Likes",
+    "detailImageField": "Likes",
+    "detailExtraFields": [],
+    "addItemForm": true,
+    "editItemForm": true,
+    "components": [
+        {
+            "name": "editableListForm",
+            "formType": "list",
+            "components": [
+                {
+                    "name": "shortText",
+                    "title": "Short text",
+                    "inputType": "shortText",
+                    "value": "ssssssssss",
+                    "type": "kendo-ui-mobile:editableListFormField",
+                    "isNew": true
+                }
+            ],
+            "type": "kendo-ui-mobile:editableListForm",
+            "isNew": true
+        },
+        {
+            "name": "editableListForm",
+            "formType": "add",
+            "components": [
+                {
+                    "name": "switch",
+                    "title": "Switch",
+                    "inputType": "switch",
+                    "dataBinding": "Likes",
+                    "type": "kendo-ui-mobile:editableListFormField",
+                    "isNew": true
+                }
+            ],
+            "type": "kendo-ui-mobile:editableListForm",
+            "isNew": true
+        },
+        {
+            "name": "editableListForm",
+            "formType": "edit",
+            "components": [
+                {
+                    "name": "date",
+                    "title": "Date",
+                    "inputType": "date",
+                    "dataBinding": "Likes",
+                    "type": "kendo-ui-mobile:editableListFormField",
+                    "isNew": true
+                }
+            ],
+            "type": "kendo-ui-mobile:editableListForm",
+            "isNew": true
+        }
+    ],
+    "pullToRefresh": true,
+    "endlessScroll": true,
+    "filterField": "Text",
+    "group": "Text",
+    "deleteItemButton": true,
+    "type": "editableListglist:editableListglist",
+    "title": "Editable List 1",
+    "isNew": true
+}

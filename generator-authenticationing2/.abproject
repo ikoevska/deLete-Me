@@ -1,0 +1,9 @@
+{
+  "ProjectName": "generator-authenticationing2",
+  "ProjectGuid": "3eb3efda-98ab-4029-b18c-d97fc8ab73a5",
+  "projectVersion": 1,
+  "ProjectTypeGuids": "{bc04931b-72e1-4fbc-aa11-0eb8dafc4613}",
+  "FrameworkVersion": "1.0",
+  "Framework": "screenBuilderTemplates",
+  "MasterProjectName": "clone-extensibility-with-gens"
+}

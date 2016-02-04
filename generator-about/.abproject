@@ -1,0 +1,9 @@
+{
+  "ProjectName": "generator-about",
+  "ProjectGuid": "e7736c14-fdff-4e96-ae3a-9b83cf2997a6",
+  "projectVersion": 1,
+  "ProjectTypeGuids": "{bc04931b-72e1-4fbc-aa11-0eb8dafc4613}",
+  "FrameworkVersion": "1.0",
+  "Framework": "screenBuilderTemplates",
+  "MasterProjectName": "clone-extensibility-with-gens"
+}

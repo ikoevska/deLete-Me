@@ -1,0 +1,199 @@
+{
+    "name": "about",
+    "title": "About Custom",
+    "description": "",
+    "type": "object",
+    "properties": [
+        {
+            "name": "name",
+            "type": "string",
+            "title": "Name",
+            "description": "How do you want to name your about form?",
+            "required": "required",
+            "default": "about"
+        },
+        {
+            "name": "parent",
+            "type": "string",
+            "description": "To which view do you want to add the about form?",
+            "enum": [],
+            "required": "requiredCli",
+            "ref": "kendo-ui-mobile:view"
+        },
+        {
+            "name": "appName",
+            "type": "string",
+            "title": "App Name",
+            "editor": "ToggleTextEditor",
+            "group": "[1]Template",
+            "description": "What app title do you want to show in the about form?",
+            "required": "requiredOptional",
+            "default": "My App"
+        },
+        {
+            "name": "appVersion",
+            "type": "string",
+            "editor": "ToggleTextEditor",
+            "group": "[1]Template",
+            "title": "App version",
+            "description": "What app version do you want to show in the about form?",
+            "required": "requiredOptional",
+            "default": "Version 1"
+        },
+        {
+            "name": "appIcon",
+            "type": "string",
+            "editor": "ToggleImageUploadEditor",
+            "group": "[1]Template",
+            "title": "App icon",
+            "description": "What image should be shown next to the app name? \nEnter a file name here and put the file in a folder called 'resources'\n inside the app. Leave empty to skip.\n",
+            "note": "The maximum image size is 2.0MB. If the uploaded image does not display in the simulator after you apply your changes, wait a few seconds and refresh the simulator.",
+            "required": "requiredOptional"
+        },
+        {
+            "name": "appIconData",
+            "type": "string",
+            "group": "[1]Template",
+            "title": "App icon data",
+            "required": "requiredOptional",
+            "no-prompt": true,
+            "description": "If you want a Base64-encoded image instead, enter the data here"
+        },
+        {
+            "name": "appDescription",
+            "type": "string",
+            "editor": "ToggleTextAreaEditor",
+            "group": "[1]Template",
+            "title": "App description",
+            "description": "What text do you want to show in the about form?",
+            "required": "requiredOptional",
+            "default": "App description"
+        },
+        {
+            "name": "contactButton",
+            "title": "Contact us",
+            "type": "boolean",
+            "editor": "CheckboxEditor",
+            "group": "[1]Template",
+            "description": "Do you want to add a Contact us button?",
+            "required": "required",
+            "default": true
+        },
+        {
+            "name": "contactLabel",
+            "type": "string",
+            "editor": "TextEditorWithDefault",
+            "group": "[1]Template",
+            "title": "Button Label",
+            "description": "How do you want to label the Contact us button?",
+            "required": "requiredDependent",
+            "default": "Contact us"
+        },
+        {
+            "name": "contactMail",
+            "type": "string",
+            "editor": "TextEditor",
+            "group": "[1]Template",
+            "title": "Specify an email to send the feedback to",
+            "description": "To which email address do you want to connect the Contact us button?",
+            "required": "requiredDependent",
+            "default": "support@example.com"
+        },
+        {
+            "name": "facebookButton",
+            "title": "Facebook button",
+            "type": "boolean",
+            "editor": "CheckboxEditor",
+            "group": "[1]Template",
+            "description": "Do you want to add a Facebook button?",
+            "required": "required",
+            "default": true
+        },
+        {
+            "name": "facebookLabel",
+            "type": "string",
+            "editor": "TextEditorWithDefault",
+            "group": "[1]Template",
+            "title": "Button Label",
+            "description": "How do you want to label the Facebook button?",
+            "required": "requiredDependent",
+            "default": "Like us on Facebook"
+        },
+        {
+            "name": "facebookLink",
+            "type": "string",
+            "editor": "TextEditor",
+            "group": "[1]Template",
+            "title": "Specify a Facebook page URL to navigate to",
+            "description": "To what Facebook page URL do you want to navigate from the Facebook button?",
+            "note": "Note: You must enable the InAppBrowser plugin in the AppBuilder project properties to be able to open external links in your app.",
+            "required": "requiredDependent",
+            "default": "https://www.facebook.com/Telerik"
+        },
+        {
+            "name": "twitterButton",
+            "title": "Twitter button",
+            "type": "boolean",
+            "editor": "CheckboxEditor",
+            "group": "[1]Template",
+            "description": "Do you want to add a Twitter button?",
+            "required": "required",
+            "default": true
+        },
+        {
+            "name": "twitterLabel",
+            "type": "string",
+            "editor": "TextEditorWithDefault",
+            "group": "[1]Template",
+            "title": "Button Label",
+            "description": "How do you want to label the Twitter button?",
+            "required": "requiredDependent",
+            "default": "Follow us on Twitter"
+        },
+        {
+            "name": "twitterLink",
+            "type": "string",
+            "editor": "TextEditor",
+            "group": "[1]Template",
+            "title": "Specify an Twitter page url to navigate to",
+            "description": "To what Twitter page URL do you want to navigate from the Twitter button?",
+            "note": "Note: You must enable the InAppBrowser plugin in the AppBuilder project properties to be able to open external links in your app.",
+            "required": "requiredDependent",
+            "default": "https://twitter.com/telerik"
+        }
+    ],
+    "dependencies": [
+        {
+            "name": "contactButton",
+            "values": [
+                true
+            ],
+            "required": [
+                "contactMail",
+                "contactLabel"
+            ]
+        },
+        {
+            "name": "facebookButton",
+            "values": [
+                true
+            ],
+            "required": [
+                "facebookLink",
+                "facebookLabel"
+            ]
+        },
+        {
+            "name": "twitterButton",
+            "values": [
+                true
+            ],
+            "required": [
+                "twitterLink",
+                "twitterLabel"
+            ]
+        }
+    ],
+    "parent": "kendo-ui-mobile:about",
+    "componentsVersion": "0.0.14"
+}

@@ -20,7 +20,6 @@
             if (navigator && navigator.splashscreen) {
                 navigator.splashscreen.hide();
             }
-
             bootstrap();
         }, false);
     } else {

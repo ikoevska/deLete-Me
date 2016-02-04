@@ -1,7 +1,10 @@
 {
   "generator-kendo-ui-mobile": {
     "dependsOn": [
-      "generator-kendo-ui-mobile@0.0.14"
+      "generator-kendo-ui-mobile@0.0.14",
+      "generator-authentication@0.0.2",
+      "generator-formication@0.0.1",
+      "generator-funkyAuthentication@0.0.1"
     ]
   }
 }

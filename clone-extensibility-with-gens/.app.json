@@ -8,9 +8,73 @@
       "title": "Home View",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "nachos",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:list",
+          "name": "nachosModel",
+          "dataProvider": "cloneExtensibilityWithGens",
+          "collection": "Comments",
+          "iconField": true,
+          "headerField": "UserId",
+          "subHeaderField": "ActivityId",
+          "filterField": "Comment",
+          "group": "Comment",
+          "masterDetails": true,
+          "detailHeaderField": "ActivityId",
+          "detailSubHeaderField": "ActivityId",
+          "detailDescriptionField": "ActivityId",
+          "detailImageField": "ActivityId",
+          "pullToRefresh": true,
+          "endlessScroll": true
+        }
+      ],
+      "title": "cheeseNachos",
+      "addToNavigation": true,
+      "icon": "wifi"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "funkyAuthenticationView",
+      "components": [
+        {
+          "type": "funkyAuthentication:funkyAuthentication",
+          "name": "funkyAuthenticationViewModel",
+          "dataProvider": "cloneExtensibilityWithGens",
+          "emailLabel": "Email Baby",
+          "emailPlaceholder": "baby@cool.com",
+          "passwordLabel": "Passwording",
+          "passwordPlaceholder": "p@$$W0rD",
+          "signinLabel": "Muncho",
+          "signinRedirect": "home",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "Subscribe",
+          "registerEmailLabel": "Funky",
+          "registerPasswordLabel": "Passwordess",
+          "registerNameLabel": "Spiro",
+          "registerLabel": "wishes",
+          "registerRedirect": "home",
+          "gotoSigninLabel": "Sing sing sing"
+        }
+      ],
+      "title": "Funky Authentication",
+      "addToNavigation": true,
+      "icon": "home"
     }
   ],
-  "dataProviders": [],
+  "dataProviders": [
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "cloneExtensibilityWithGens",
+      "title": "clone-extensibility-with-gens / clone-extensibility-with-gens",
+      "source": "everlive",
+      "everliveKey": "anv2iovri9wa2xia",
+      "offlineStorage": true
+    }
+  ],
   "name": "kendoUiMobileApp",
   "navigation": "tabstrip",
   "view": "home",

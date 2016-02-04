@@ -1,0 +1,62 @@
+<div data-role="view" data-title="Funky Authentication" data-layout="main" data-model="app.funkyAuthenticationView" data-show="app.funkyAuthenticationView.onShow" data-after-show="app.funkyAuthenticationView.afterShow">
+    <div class="signin-view">
+        <form>
+            <ul data-role="listview" data-style="inset">
+                <li>
+                    <label>Email Baby
+                        <input type="email" placeholder="baby@cool.com" data-bind="value: funkyAuthenticationViewModel.email" required autofocus>
+                    </label>
+                </li>
+                <li>
+                    <label>Passwording
+                        <input type="password" placeholder="p@$$W0rD" data-bind="value: funkyAuthenticationViewModel.password" required>
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group button-group-vertical">
+                <a data-role="button" class="primary" data-bind="events: { click: funkyAuthenticationViewModel.signin }">Muncho</a>
+
+                <a data-role="button" data-bind="events: { click: funkyAuthenticationViewModel.toggleView }">Subscribe</a>
+
+            </div>
+        </form>
+    </div>
+    <div class="signup-view" style="display:none;">
+        <form>
+            <ul data-role="listview" data-style="inset">
+                <li>
+                    <label>Funky
+                        <input type="email" data-bind="value: funkyAuthenticationViewModel.email" required>
+                    </label>
+                </li>
+                <li>
+                    <label>Passwordess
+                        <input type="password" data-bind="value: funkyAuthenticationViewModel.password">
+                    </label>
+                </li>
+                <li>
+                    <label>Spiro
+                        <input type="text" data-bind="value: funkyAuthenticationViewModel.displayName">
+                    </label>
+                </li>
+            </ul>
+            <div class="button-group button-group-vertical">
+                <a class="primary" data-role="button" data-bind="events: { click: funkyAuthenticationViewModel.register }">wishes</a>
+                <a data-role="button" data-bind="events: { click: funkyAuthenticationViewModel.toggleView }">Sing sing sing</a>
+            </div>
+        </form>
+    </div>
+    <div class="offline" align="center" style="display:none;">
+        You are currently offline. Before using this app in offline mode you must initialize it while you are online
+    </div>
+    <!-- START_CUSTOM_CODE_funkyAuthenticationViewModel -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_funkyAuthenticationViewModel -->
+
+    <!-- START_CUSTOM_CODE_funkyAuthenticationView -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_funkyAuthenticationView -->
+</div>
