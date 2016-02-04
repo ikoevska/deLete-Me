@@ -1,0 +1,9 @@
+{
+  "ProjectName": "generator-snacks1",
+  "ProjectGuid": "d59aac62-4628-48b8-80e6-7d69bf30b43c",
+  "projectVersion": 1,
+  "ProjectTypeGuids": "{bc04931b-72e1-4fbc-aa11-0eb8dafc4613}",
+  "FrameworkVersion": "1.0",
+  "Framework": "screenBuilderTemplates",
+  "MasterProjectName": "clone-extensibility-with-gens"
+}
